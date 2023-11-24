@@ -1,0 +1,235 @@
+ /* Style général */
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  /* Style des formulaires */
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  .custom-btn {
+          transition: all 0.3s ease;
+      }
+  
+      .custom-btn:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      @keyframes zoomIn {
+          from {
+              transform: scale(1);
+          }
+          to {
+              transform: scale(1.1);
+          }
+      }
+  
+      .custom-btn {
+          transition: all 0.3s ease;
+      }
+  
+      .custom-btn:hover {
+          animation: zoomIn 0.3s forwards;
+          color: #fff;
+          background-color: #17a2b8; /* Change la couleur de fond au survol */
+      }
+  /* Style du bouton Insérer */
+  .btn-insere {
+    width: 225px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  .timezone-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px #408c3e; /* effet de relief vers le bas */
+    transition: all 0.3s ease;
+  }
+  /* Styles pour les boutons */
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.btn-outline-secondary {
+  border-color: #95a5a6;
+  color: #95a5a6;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f0f0f0;
+  border-color: #95a5a6;
+  color: #333333;
+}
+
+/* Ajoutez d'autres styles selon vos préférences */
+
+   
+  .custom-title {
+              text-align: center;
+              font-size: 3em;
+              padding: 20px;
+              border-radius: 10px;
+              background-image: linear-gradient(45deg, #f3ec78, #af4261, #574b90, #24386e, #3bba9c, #f3ec78);
+              background-size: 600%;
+              color: transparent;
+              -webkit-background-clip: text;
+              background-clip: text;
+              animation: gradientAnimation 15s ease infinite, scrollText 8s linear infinite;
+              position: relative;
+          }
+  
+          /* Animation du dégradé de couleurs */
+          @keyframes gradientAnimation {
+              0% { background-position: 0% 50%; }
+              100% { background-position: 100% 50%; }
+          }
+  
+          /* Animation de défilement de texte */
+          @keyframes scrollText {
+              0% { transform: translateY(0); }
+              100% { transform: translateY(-50px); }
+          }
+  
+          /* Styles pour la bordure animée */
+          .custom-title::before {
+              content: '';
+              position: absolute;
+              top: -5px;
+              left: -5px;
+              right: -5px;
+              bottom: -5px;
+              border-radius: 12px;
+              border: 2px dashed #3498db;
+              animation: borderBlink 2s linear infinite;
+          }
+  
+          /* Animation de la bordure clignotante */
+          @keyframes borderBlink {
+              0%, 100% { opacity: 1; }
+              50% { opacity: 0; }
+          }
+          .form-container {
+            
+             
+              border-radius: 04px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+  
+          .form-label {
+              font-weight: bold;
+          }
+  
+          .btn-primary {
+              background-color: #007bff;
+              border-color: #007bff;
+          }
+  
+          .btn-primary:hover {
+              background-color: #0056b3;
+              border-color: #0056b3;
+          }
+  
+          /* Animation du dégradé de couleurs */
+          @keyframes gradientAnimation {
+              0% { background-position: 0% 50%; }
+              100% { background-position: 100% 50%; }
+          }
+  
+          /* Animation de défilement de texte */
+          @keyframes scrollText {
+              0% { transform: translateY(0); }
+              100% { transform: translateY(-50px); }
+          }
+  
+  .timezone-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 2px #408c3e; /* effet de relief vers le haut au survol */
+    transform: translateY(3px); /* léger décalage vers le bas au survol */
+  }
+  
+  .timezone-button:active {
+    background-color: #4caf50;
+    box-shadow: none; /* retirer l'effet de relief lorsqu'on clique */
+    transform: translateY(0);
+  }
+  .custom-form-group {
+        margin-bottom: 2rem;
+      }
+      .custom-label {
+        font-weight: bold;
+        color: #333;
+      }
+      .custom-select {
+        width: 100%;
+        padding: .375rem 2rem .375rem .75rem;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        background-color: #fff;
+        color: #495057;
+      }
+      .custom-checkbox {
+        margin-right: 10px;
+      }
+      .custom-button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #28a745;
+        border: none;
+        color: #fff;
+        transition: background-color 0.3s ease;
+      }
+      .custom-button:hover {
+        background-color: #218838;
+      }
+  .btn-insere:hover {
+    background-color: #2980b9;
+  }
+  /* Style pour la case à cocher */
+  .form-check-input {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Style de l'aperçu de l'image */
+  .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .pagination {
+              display: flex;
+              list-style: none;
+              padding: 0;
+          }
+          .pagination li {
+              margin: 0 5px;
+          }
+          .pagination i {
+              cursor: pointer;
+          }
